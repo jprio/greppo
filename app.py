@@ -14,10 +14,15 @@ app.base_layer(
 )
 
 app.base_layer(
-    provider="CartoDB Positron"
+    #provider="CartoDB Positron"
+    #provider="OpenStreetMap Mapnik"
+    #provider="TomTom Basic"
+    provider="Strava Ride"
+
 )
 # Possible alternative names:
-
+provider = "OpenStreetMap Mapnik"
+provider = "OpenWeatherMap Clouds"
 provider = "CartoDB Positron"
 provider = "cartodbpositron"
 provider = "cartodb-positron"
@@ -25,7 +30,7 @@ provider = "carto db/positron"
 provider = "CARTO_DB_POSITRON"
 provider = "CartoDB.Positron"
 
-data_gdf_1 = gpd.read_file("test/data/communes.geojson")
+data_gdf_1 = gpd.read_file("resources/communes.geojson")
 
 data_gdf_1["Value"] = pd.Series(
     np.ones(len(data_gdf_1["code"])),

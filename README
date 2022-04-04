@@ -1,4 +1,10 @@
-Démarrage : /home/jp/.local/bin/greppo serve app.py
+Références : 
+* https://medium.com/towards-data-science/geospatial-app-with-google-earth-engine-and-greppo-2c166b373382
+* https://towardsdatascience.com/build-a-geospatial-dashboard-in-python-using-greppo-60aff44ba6c9
 
-https://github.com/springmeyer/geojsonp
+Démarrage : 
+* dans le venv : greppo serve app.py
+
+Ressources :
+* https://github.com/springmeyer/geojsonp
 
